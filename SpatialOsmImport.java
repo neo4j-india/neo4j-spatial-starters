@@ -8,7 +8,6 @@ import org.neo4j.kernel.EmbeddedGraphDatabase;
 class SpatialOsmImport {
   public static void main(String[] args)
   {
-    System.out.println("Looks like the OSMImporter was imported! :P");
     OSMImporter importer = new OSMImporter("India");
     BatchInserter batchinserter = new BatchInserterImpl(args[1]);
     try{
